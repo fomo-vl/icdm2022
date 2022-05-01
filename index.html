@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>ICDM 2022 Workshop on Foundation Models in Vision and Language</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/simple.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css' />
+  <style>
+      .center-cropped {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 50%;
+      }
+  </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="headertext">
+            <div class="title"></div>
+        </div>
+    </div>
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+				  <li><a href="#overview">Workshop Overview</a></li>
+				  <li><a href="#schedule">Schedule</a></li> 
+				  <li><a href="#speakers">Invited Speakers</a></li> 
+				  <li><a href="#organizers">Organizers</a></li> 
+          <li><a href="subpage/callforpaper.html">Call for Paper</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  
+  <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <!-- Entries Column -->
+            <div class="col-md-12">
+                <!-- <h2 id="overview">Workshop Overview</h2> -->
+                <div style="font-family: sans-serif; font-size: 20px;">
+                <div style="margin-top:1%; text-align:justify;">
+                <h2 id="overview">Overview</h2>
+
+		<p>State-of-the-art AI systems can learn directly from whatever information they’re given —  without relying on heavily labeled data sets to teach them. Such easy-to-collect data provides a more flexible form of supervision and a more affordable solution to data scalablility. By training deep neural networks with a large number of parameters on such heterogeneous data, recent foundation models have shown great promises in generality and usability. For example:
+      <ul style="font-family: sans-serif; font-size: 20px; margin-top:1%; text-align:justify; line-height: 30px;">
+        <li>Language: <a href="https://arxiv.org/abs/1810.04805">BERT</a>, <a href="https://en.wikipedia.org/wiki/GPT-3">GPT family</a></li> 
+        <li>Vision: <a href="https://arxiv.org/abs/2002.05709">SimCLR</a>, <a href="https://arxiv.org/abs/2111.06377">MAE</a></li> 
+        <li>Vision-and-Language: <a href="https://openai.com/blog/clip/">CLIP</a>, <a href="https://ai.googleblog.com/2021/05/align-scaling-up-visual-and-vision.html">ALIGN</a> and <a href="https://openai.com/dall-e-2/">DALLE</a></li>
+      </ul>
+    </p>
+        <p>One appealing proeprty of these foundation models is their superior performance on zero-shot and few-shot adaption to various new real-world tasks. We propose this "Foundation Models in Vision and Language (FOMO-VL)" workshop, aiming to gather academic and industry communities to work on foundation models to solve real-world scenarios, focusing on the challenge of building AI models that learn from heterogeneous data to gain task-level transfer ability. </p>
+                </div>
+                </div>
+           </div>
+
+
+           <div class="col-md-12">
+                <h2 id="schedule">Important dates</h2>
+                <h3>
+                <ul style="font-family: sans-serif; font-size: 20px; margin-top:3%; text-align:justify; line-height: 30px;">
+                    <li>TBD: Workshop paper submission deadline</li>
+                    <li>TBD: Workshop paper acceptance decision to authors</li>
+                </ul>
+                </h3>
+           </div>
+
+
+           <div class="col-md-12">
+                <h2 id="speakers">Invited Speakers</h2>
+                  <p>
+                    To be announced.
+                  </p>
+           </div>
+
+        <div class="col-md-12">
+                <h2 id="organizers">Organizers</h2>
+                <div class="row">
+                  <div class="col-lg-3">
+                      <img src="https://cse.buffalo.edu/~changyou/images/ccy1.jpg" width="60%" height="auto" style="border-radius: 50%">
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-3">
+                      <img src="https://pbs.twimg.com/profile_images/1512443346077188098/9Jg9eWHn_400x400.jpg" width="60%" height="auto" style="border-radius: 50%">
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-3">
+                      <img src="img/placeholder_profile.JPEG" width="60%" height="auto" style="border-radius: 50%">
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-3">
+                      <img src="https://www.cs.cmu.edu/~pliang/images/photo.jpeg" width="60%" height="auto" style="border-radius: 50%">
+                  </div><!-- /.col-lg-4 -->
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <h4><a href="https://cse.buffalo.edu/~changyou/index.html">Changyou Chen</a>, University at Buffalo, SUNY</h4>
+                  </div>
+                  <div class="col-lg-3">
+                    <h4><a href="https://chunyuan.li/">Chunyuan Li</a>, Microsoft Research, Redmond</h4>
+                  </div>
+                  <div class="col-lg-3">
+                    <h4><a href="https://www.linkedin.com/in/pingjin1">Hongxia Yang</a>, Alibaba Group</h4>
+                  </div>                  
+                  <div class="col-lg-3">
+                    <h4><a href="https://www.cs.cmu.edu/~pliang/">Paul Pu Liang</a>, Carnegie Mellon University</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3">
+                      <img src="img/yi_xu.jpeg" width="60%" height="auto" style="border-radius: 50%">
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-3">
+                      <img src="img/placeholder_profile.jpeg" width="60%" height="auto" style="border-radius: 50%">
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-3">
+                      <img src="img/belinda_zeng.jpeg" width="60%" height="auto" style="border-radius: 50%">
+                  </div><!-- /.col-lg-4 -->
+                </div>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <h4><a href="https://www.linkedin.com/in/yeahgoyixu">Yi Xu</a>, Amazon</h4>
+                  </div>
+                  <div class="col-lg-3">
+                    <h4><a href="https://www.linkedin.com/in/sontran">Son Tran</a>, Amazon</h4>
+                  </div>
+                  <div class="col-lg-3">
+                    <h4><a href="https://www.linkedin.com/in/belindazeng">Belinda Zeng</a>, Amazon</h4>
+                  </div>
+               </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- Other people may like it too! -->
+    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+
+    <footer style="background-color:#444; color:#fdfdfd; padding:40px 0;">
+      <p style="text-align:center; font-family: sans-serif; font-size: 14px;">
+      Have any questions or suggestions? <br/>
+      Feel free to reach us at: <br/>
+      <a href="https://github.com/fomo-vl">https://github.com/fomo-vl</a><br/>
+      </p>
+  </footer>
+    
+</body>
+
+</html>
