@@ -1,10 +1,9 @@
 .header{
-    background-image:url(../img/PreviewImage2.png);
+    background-image:url(../img/PreviewImage.jpg);
     height:400px;
     background-repeat: no-repeat;
     background-position:center;
     background-size: auto 100%;
-    width: var(--width);  
 }
 .headertext{
     width:100%;
