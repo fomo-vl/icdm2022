@@ -1,29 +1,39 @@
 .header{
-    background-image:url(../img/PreviewImage.png);
+    background-image:url(../img/PreviewImage2.png);
     height:400px;
     background-repeat: no-repeat;
     background-position:center;
     background-size: auto 100%;
+    width: var(--width);  
 }
 .headertext{
     width:100%;
-    margin:auto
+    margin:auto;
 }
 
 .title {
-  text-align:center;
-  font-size:75px;
-  font-weight:800;
-  font-family:Helvetica;
+  text-align:right;
+  vertical-align: bottom;
+  font-size:36px;
+  font-weight:400;
+  font-family:none;
   color:white;
-  padding-top:100px;
-  margin-bottom:10px;
+  padding-top:290px;
+  margin-right: 15px;
+  margin-bottom: 0;
   text-shadow: 8px 8px 16px #000000;
+}
+.title-bold {
+  margin-top: 5px;
+  padding-top: 0;
+  font-size:40px;
+  font-weight:900;
 }
 
 .subtitle {
   text-align:center;
-  font-size:24px;
+  vertical-align: bottom;
+  font-size:32px;
   font-family:Helvetica;
   color:white;
   border-top:3px solid white;
@@ -42,4 +52,30 @@
 
 table, th, td {
   border:1px solid black;
+}
+
+@media (min-width:1300px) { 
+  .title {
+    margin-right: calc(50% - 650px);
+  }
+}
+
+@media (max-width:760px) { 
+  .title {
+    padding-top: 220px;
+  }
+  .title-bold {
+    padding-top: 0;
+  }
+}
+
+@media (max-width:400px) { 
+  .title {
+    font-size: 28px;
+  }
+  .title-bold {
+    padding-top: 0;
+    font-size: 30px;
+    font-weight: 500;
+  }
 }
