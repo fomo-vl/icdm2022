@@ -146,7 +146,7 @@
                   <div class="col-lg-3 fig">
                     <img src="img/tengyu.jpeg" width="150px" height="auto" style="border-radius: 50%">
                     <figcaption><h4><a href="https://ai.stanford.edu/~tengyuma/">Tengyu Ma</a><br>Standford University</h4></figcaption>
-			<b>Bio & Talk Info</b> <a class="abstract-toggle">[Expand]</a>
+			<b>Bio & Talk Info</b> <a class="abstract-toggle">[Collapse]</a>
 			<div class="abstract-content">
 			<p><b>Tengyu Ma</b> is an assistant professor of computer science and statistics at Stanford. His research interests broadly include topics in machine learning and algorithms, such as deep learning and its theory, (deep) reinforcement learning and its theory, representation learning, robustness, non-convex optimization, distributed optimization, and high-dimensional statistics.</p> 
 				<p><b>Talk Title</b>: Toward understanding foundation models </p>
@@ -314,6 +314,9 @@
       </p>
   </footer>
     
+ <script>
+    $(document).foundation();
+ </script>
 <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -359,7 +362,7 @@
             //change text of header based on visibility of content div
             $header.text(function () {
                 //change text based on condition
-                return $content.is(":visible") ? "[Expand]" : "[Collapse]";
+                return $content.is(":visible") ? "[Collapse]" : "[Expand]";
             });
         });
 
