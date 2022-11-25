@@ -121,6 +121,11 @@
                   <div class="col-lg-3 fig">
                     <img src="img/danqi.jpeg" width="150px" height="auto" style="border-radius: 50%">
                     <figcaption><h4><a href="https://www.cs.princeton.edu/~danqic/">Danqi Chen</a><br>Princeton University</h4></figcaption>
+		    <br>
+                                <b>Abstract</b> <a class="abstract-toggle">[Expand]</a>
+                                <div class="abstract-content">
+                                testing
+                                </div>
                   </div><!-- /.col-lg-4 -->      
 
                   <div class="col-lg-3 fig">
@@ -258,6 +263,58 @@
       </p>
   </footer>
     
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63638588-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- jquery smooth scroll to id's -->
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+    <script>
+        $(".abstract-toggle").click(function () {
+
+        $header = $(this);
+        //getting the next element
+        $content = $header.next();
+        //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+        $content.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of header based on visibility of content div
+            $header.text(function () {
+                //change text based on condition
+                return $content.is(":visible") ? "[Collapse]" : "[Expand]";
+            });
+        });
+
+        });
+    </script>
+	
 </body>
 
 </html>
